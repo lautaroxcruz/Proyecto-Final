@@ -8,42 +8,82 @@
     font-family: 'open sans';
     background-image: url(../assets/04-st-2-1-b.png);
 }
-
-.grid-container {
-  display: grid;
-  background-color: grey;
-  margin: 25px;
-  grid-template-columns: auto auto auto;
-  width: 15px;
-}
-
-.grid-container div {
-  background-color: yellow;
-  margin: 5px;
-  
-}
 /* -------------------------------------------------------------------------------------------------------------------- */
 /* menu nav */
-
-.nav {
-    background-color:black;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    font-size: 15px;
+nav {
+  background: #222;
+  padding: 5px 20px;
 }
-.nav__links{
-    flex-direction: row;
-     align-items: flex-start;
-     padding: 40px;
+ul {
+  list-style-type: none;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.logo a:hover {
+  text-decoration: none;
+}
+.menu li {
+  font-size: 16px;
+  padding: 15px 5px;
+  white-space: nowrap;
+}
+.logo a {
+  font-size: 20px;
+}
+
+
+/* Mobile menu */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.item {
+  width: 100%;
+  text-align: center;
+  order: 3;
+  display: none;
+}
+.item.active {
+  display: block;
+}
+
+
+/* Tablet menu */
+@media all and (min-width: 600px) {
+  .menu {
+    justify-content: center;
   }
-   
-  .nav__link--color {
-      color: whitesmoke ;
-      justify-content: space-between;
-      padding: 15px;
-      font-size: large;
+  .logo {
+    flex: 1;
   }
+  }
+
+
+/* Desktop menu */
+@media all and (min-width: 900px) {
+  .item {
+    display: block;
+    width: auto;
+  }
+ 
+  }
+  .logo {
+    order: 0;
+  }
+  .item {
+    order: 1;
+  }
+  .menu li {
+    padding: 15px 10px;
+  }
+
 /* -------------------------------------------------------------------------------------------------------------------- */
 
 .textservicios{
@@ -266,7 +306,7 @@ body {
 
 .form-register {
   width: 400px;
-  background: #24303c;
+  background: black;
   padding: 30px;
   margin: auto;
   margin-top: 100px;
@@ -274,6 +314,11 @@ body {
   font-family: 'calibri';
   color: white;
   box-shadow: 7px 13px 37px #000;
+}
+
+.center {
+  text-align: center;
+  font-weight: bolder;
 }
 
 .form-register h4 {
@@ -287,7 +332,7 @@ body {
   padding: 10px;
   border-radius: 4px;
   margin-bottom: 16px;
-  border: 1px solid #1f53c5;
+  border: 1px solid grey;
   font-family: 'calibri';
   font-size: 18px;
   color: white;
@@ -335,3 +380,5 @@ font-size: 20px;
 background-color: grey;
    padding: 150px;
 }
+
+/* ----------------------------------------------------------------------------------------------------------- */
