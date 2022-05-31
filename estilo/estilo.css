@@ -8,6 +8,15 @@
     font-family: 'open sans';
     background-image: url(../assets/background\ image.jpg);
 }
+
+.gridimagen {
+  display: grid;
+  grid-auto-columns: auto;
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+  padding: 100px; 
+}
 /* -------------------------------------------------------------------------------------------------------------------- */
 /* menu nav */
 nav {
@@ -104,8 +113,7 @@ margin: 150px;
   grid-template-columns: 150px auto 150px;
   background-color: #000;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content:space-between;
 }
 
 .grid-imgcontainer > * {
