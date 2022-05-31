@@ -38,6 +38,7 @@ a:hover {
 
 
 /* Mobile menu */
+@media all and (min-width: 300px) {}
 .menu {
   display: flex;
   flex-wrap: wrap;
@@ -67,7 +68,7 @@ a:hover {
 
 
 /* Desktop menu */
-@media all and (min-width: 900px) {
+@media all and (min-width: 600px) {
   .item {
     display: block;
     width: auto;
@@ -85,6 +86,19 @@ a:hover {
   }
 
 /* -------------------------------------------------------------------------------------------------------------------- */
+.grid-texto {
+  display: grid;
+ grid-template-columns: auto;
+ background-color: yellow;
+ display: flexbox;
+ justify-content: center;
+margin: 150px;
+}
+
+.left {
+  text-align: center;
+}
+
 .grid-imgcontainer {
   display: grid;
   grid-template-columns: 150px auto 150px;
@@ -118,25 +132,9 @@ width: 450px;
   justify-content: center;
   align-items: center;
 }
+@media only screen 
+   and (min-width : 320px) {
 
-header , footer{
-  grid-column: 1 / span 3 ;
-}
-
-@media all and (max-width: 600px) {
-aside , article {
-  grid-column : 1 / span 3;
-}
-
-.grid-container {
-  grid-template-rows: repeat(5, 100px);
-}
-
-.textocental {
-  display: grid;
-  background-color: chartreuse;
-  border-color: tomato;
-}
 }
 /* -------------------------------------------------------------------------------------------------------------------- */
  /* footer */
@@ -145,7 +143,6 @@ aside , article {
     width: 100%;
     background: #202020;
     color: white;  
-   
   }
    
   .container-footer-all{
@@ -252,18 +249,29 @@ aside , article {
   }
    
   @media(max-width: 600px){
-   
+
+
     .container-body{
         flex-wrap: wrap;
+        display:block; 
+        padding:0px;
+        margin: 0px;
+        align-items: center;
     }
    
     .colum1{
         max-width: 100%;
+        display:block;
+        padding:0px;
+        margin: 0px;
     }
    
     .colum2,
     .colum3{
-        margin-top: 40px;
+        margin-top:auto;
+        display:block; 
+        padding:0px;
+        margin: 0px;
     }
   }
   
@@ -272,31 +280,26 @@ aside , article {
 
 /* -------------------------------------------------------------------------------------------------------------------- */
 /* esto pertenece a la pagina "acerca de nosotros"*/
-.acercadenosotros{
-      padding-right: 200px;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: medium;
-      background-color: gray;
-      margin-top: 14px;
+.acercadenosotros {
+  display: grid;
+
 }
-.img1 {
-  height: 100px;
-  width: 100px;
-  justify-content: space-between;
+.tituloQuienSoy {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  background-color: white;
 }
 
-.img2 {
-  height: 100px;
-  width: 100px;
-  justify-content: space-between;
-}
-
-.img3 {
-  height: 100px;
-  width: 100px;
-  justify-content: space-between;
-}
-
+.backgroundcolor {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  font-size: medium;
+  text-align: center;
+  }
+ 
 /* fin del body de "acerca de nosotros" */
 /* -------------------------------------------------------------------------------------------------------------------- */
 
@@ -329,11 +332,15 @@ aside , article {
 padding: 100px;
 text-align: center;
 flex-direction: row;
+flex-grow: 3;
+
 }
 
 .imagenesportfolio {
   height: 120px;
   width: 120px;
+  justify-content: space-between;
+
 }
 /* -------------------------------------------------------------------------------------------------------------- */
 
