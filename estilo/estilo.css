@@ -17,6 +17,7 @@
   margin: 5px;
   padding: 100px; 
 }
+
 /* -------------------------------------------------------------------------------------------------------------------- */
 /* menu nav */
 nav {
@@ -123,7 +124,7 @@ width: 450px;
 }
 
 .grid-container {
-  background-image: url(../assets/background\ image.jpg) ;
+  background-color: yellow ;
   display: grid;
   grid-template-columns: 150px auto 150px;
   font-size: 20px;
