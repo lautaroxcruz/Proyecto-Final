@@ -8,6 +8,16 @@
     font-family: 'open sans';
     background-image: url(../assets/background\ image.jpg);
 }
+
+.gridimagen {
+  display: grid;
+  grid-auto-columns: auto;
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+  padding: 100px; 
+}
+
 /* -------------------------------------------------------------------------------------------------------------------- */
 /* menu nav */
 nav {
@@ -38,6 +48,7 @@ a:hover {
 
 
 /* Mobile menu */
+@media all and (min-width: 300px) {}
 .menu {
   display: flex;
   flex-wrap: wrap;
@@ -67,7 +78,7 @@ a:hover {
 
 
 /* Desktop menu */
-@media all and (min-width: 900px) {
+@media all and (min-width: 600px) {
   .item {
     display: block;
     width: auto;
@@ -85,15 +96,63 @@ a:hover {
   }
 
 /* -------------------------------------------------------------------------------------------------------------------- */
+<<<<<<< HEAD
+=======
+.grid-texto {
+  display: grid;
+ grid-template-columns: auto;
+ background-color: yellow;
+ display: flexbox;
+ justify-content: center;
+margin: 150px;
+}
+
+.left {
+  text-align: center;
+}
+
+>>>>>>> f9b6be78a68319b15d962610fceac77d942a82b9
 .grid-imgcontainer {
   display: grid;
   grid-template-columns: 150px auto 150px;
   background-color: #000;
   display: flex;
+<<<<<<< HEAD
   align-items: center;
   justify-content: center;
+=======
+  justify-content:space-between;
 }
 
+.grid-imgcontainer > * {
+  grid-template-columns: repeat(3, 100px);
+height: 350px;
+width: 450px;
+}
+
+.grid-container {
+  background-color: yellow ;
+  display: grid;
+  grid-template-columns: 150px auto 150px;
+  font-size: 20px;
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+  padding: 15px;
+}
+
+.grid-container > *{
+  background-color: blue;
+  border: 1px solid orangered;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+>>>>>>> f9b6be78a68319b15d962610fceac77d942a82b9
+}
+@media only screen 
+   and (min-width : 320px) {
+
+<<<<<<< HEAD
 .grid-imgcontainer > * {
   grid-template-columns: repeat(3, 100px);
 height: 350px;
@@ -131,6 +190,8 @@ aside , article {
 .grid-container {
   grid-template-rows: repeat(5, 100px);
 }
+=======
+>>>>>>> f9b6be78a68319b15d962610fceac77d942a82b9
 }
 /* -------------------------------------------------------------------------------------------------------------------- */
  /* footer */
@@ -139,7 +200,6 @@ aside , article {
     width: 100%;
     background: #202020;
     color: white;  
-   
   }
    
   .container-footer-all{
@@ -246,18 +306,33 @@ aside , article {
   }
    
   @media(max-width: 600px){
+<<<<<<< HEAD
    
+=======
+
+
+>>>>>>> f9b6be78a68319b15d962610fceac77d942a82b9
     .container-body{
         flex-wrap: wrap;
+        display:block; 
+        padding:0px;
+        margin: 0px;
+        align-items: center;
     }
    
     .colum1{
         max-width: 100%;
+        display:block;
+        padding:0px;
+        margin: 0px;
     }
    
     .colum2,
     .colum3{
-        margin-top: 40px;
+        margin-top:auto;
+        display:block; 
+        padding:0px;
+        margin: 0px;
     }
   }
   
@@ -266,31 +341,26 @@ aside , article {
 
 /* -------------------------------------------------------------------------------------------------------------------- */
 /* esto pertenece a la pagina "acerca de nosotros"*/
-.acercadenosotros{
-      padding-right: 200px;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: medium;
-      background-color: gray;
-      margin-top: 14px;
+.acercadenosotros {
+  display: grid;
+
 }
-.img1 {
-  height: 100px;
-  width: 100px;
-  justify-content: space-between;
+.tituloQuienSoy {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  background-color: white;
 }
 
-.img2 {
-  height: 100px;
-  width: 100px;
-  justify-content: space-between;
-}
-
-.img3 {
-  height: 100px;
-  width: 100px;
-  justify-content: space-between;
-}
-
+.backgroundcolor {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  font-size: medium;
+  text-align: center;
+  }
+ 
 /* fin del body de "acerca de nosotros" */
 /* -------------------------------------------------------------------------------------------------------------------- */
 
@@ -323,11 +393,15 @@ aside , article {
 padding: 100px;
 text-align: center;
 flex-direction: row;
+flex-grow: 3;
+
 }
 
 .imagenesportfolio {
   height: 120px;
   width: 120px;
+  justify-content: space-between;
+
 }
 /* -------------------------------------------------------------------------------------------------------------- */
 
@@ -399,19 +473,64 @@ body {
 }
 
 /* fin del formulario */ 
-/* ----------------------------------------------------------------------------------------------------------- */
 
-/* ----------------------------------------------------------------------------------------------------------- */
-/*pagina productos*/ 
-
-.tituloproductos {
-background-color: yellow;
-padding: 50px;
-font-size: 20px;
+/*cards*/ 
+body{
+  background: #f8f9fa; 
 }
-.paginaproductos {
-background-color: grey;
-   padding: 150px;
+.principal{
+margin-top:50px;
+font-family: 'Roboto';
 }
 
+<<<<<<< HEAD
 /* ----------------------------------------------------------------------------------------------------------- */
+=======
+
+/*tarjeta 1*/
+.card-header-first{
+margin-top:-40px;
+  height: 120px;
+background: linear-gradient(-90deg, #BF019F, #F28A57); 
+box-shadow:1px 5px 15px #a2a2a2;
+}
+
+/*tarjeta 2*/
+.card-header-second{
+box-shadow:1px 7px 15px #a2a2a2;
+  margin:-25px -25px 0px -25px;
+  height: 120px;
+background: linear-gradient(-90deg, #8E2DE2, #4A00E0); 
+}
+
+/*tarjeta 3*/
+.card-header-third{
+  margin-top:-25px;
+  height: 120px;
+box-shadow:1px 5px 15px #a2a2a2;
+  background: linear-gradient(-90deg, #11998e, #38ef7d); 
+}
+
+.card-section-third span i{
+padding:17px;
+margin:0px 10px;
+color:#fff;
+height:50px;
+width:50px;
+box-shadow:1px 6px 24px #d2d2d2;
+background: linear-gradient(-90deg, #11998e, #38ef7d); 
+}
+
+.card-header-third span i:hover,.card-section-third span i:hover{
+box-shadow:1px 1px 15px #000;
+}
+
+/*efecto shadows para todas las tarjetas*/
+.card-section{
+box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+/*Para el efecto sombra al pasar por encima el mouse*/
+.card-section:hover{
+box-shadow:1px 1px 20px #d2d2d2;
+}
+>>>>>>> f9b6be78a68319b15d962610fceac77d942a82b9
