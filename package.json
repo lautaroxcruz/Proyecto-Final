@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/lautaroxcruz/Proyecto-Final/issues"
   },
-  "homepage": "https://github.com/lautaroxcruz/Proyecto-Final#readme"
+  "homepage": "https://github.com/lautaroxcruz/Proyecto-Final#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
 }
