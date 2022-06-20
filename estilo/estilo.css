@@ -420,9 +420,19 @@ body {
 }
 
 /* fin del formulario */ 
-
+.tituloprincipal{
+  display: flex;
+  flex-direction: row;
+}
+.h1 {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
 .frontendpage {
   background-color: rgb(2,0,36);
         background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(7,46,146,1) 45%, rgba(4,112,190,1) 74%, rgba(0,212,255,1) 100%);;
 }
    }
+
+
