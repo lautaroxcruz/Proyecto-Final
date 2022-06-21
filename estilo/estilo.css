@@ -493,5 +493,12 @@ svg circle {
   stroke-dasharray: 220;
 }
 
+.tituloservicios {
+  background-color: orange;
+  margin: 50px;
+  display: flexbox;
+  text-align: center;
+  align-items: center;
+}
 
    }
