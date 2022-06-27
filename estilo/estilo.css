@@ -509,4 +509,11 @@ svg circle {
   background-color: whitesmoke;
   margin: 35px;
 }
+
+.redtext {
+  text-align: center;
+  font-size: 25px;
+  font-family:Arial;
+  color: red;
+}
    }
