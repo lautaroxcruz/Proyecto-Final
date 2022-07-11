@@ -421,7 +421,7 @@ body {
 
 /* fin del formulario */ 
 .contenedortitulo {
-  color: whitesmoke;
+  color: white;
   background-color: transparent;
   text-align: center;
   font-family: 'Oswald', sans-serif;
@@ -514,11 +514,6 @@ svg circle {
 }
 
 /* galeria*/
-*{
-  margin:0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 .galeria{
   font-family: 'open sans';
